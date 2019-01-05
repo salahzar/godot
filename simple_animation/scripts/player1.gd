@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var SPEED = 8000
 var UP = Vector2(0,-1)
-var move = Vector2()
+var velocita = Vector2()
 var action = false
 
 func _ready():
@@ -11,32 +11,32 @@ func _ready():
 	pass
 
 func _physics_process(delta):
-	move = Vector2(0,0)
+	velocita = Vector2(0,0)
 	action = false
 	
 	muoviti(delta)
 	salta()
 	gravita()
 	verificaFermo()
-	move_and_slide(move)
+	move_and_slide(velocita)
 	
 func muoviti(delta):
 	if(Input.is_action_pressed("ui_right")):
 		$AnimatedSprite.play("running right")
 		$AnimatedSprite.flip_h = false
-		move.x += SPEED * delta
+		velocita.x += SPEED * delta
 		action = true
 		
 	if(Input.is_action_pressed("ui_left") && !action):
 		$AnimatedSprite.play("running right")
 		$AnimatedSprite.flip_h = true
-		move.x -= SPEED * delta
+		velocita.x -= SPEED * delta
 		action = true
 		
 		
 func gravita():
 	if(!is_on_floor()):
-		move.y += 200
+		velocita.y += 200
 	
 func verificaFermo():
 	
@@ -46,6 +46,6 @@ func verificaFermo():
 func salta():
 	if(Input.is_action_pressed("ui_up")):
 		$AnimatedSprite.play("salta")
-		move.y -= 700
+		velocita.y -= 700
 		action = true
 		
