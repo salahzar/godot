@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://GUI.gd" type="Script" id=1]
+[ext_resource path="res://albero.tscn" type="PackedScene" id=2]
+[ext_resource path="res://casetta.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Pavimento.tscn" type="PackedScene" id=4]
+[ext_resource path="res://KinematicBody.tscn" type="PackedScene" id=5]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="GUI" type="Panel" parent="."]
+margin_right = 174.0
+margin_bottom = 80.0
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="GUI"]
+margin_right = 380.0
+margin_bottom = 130.0
+text = "My text"
+
+[node name="Albero" parent="." instance=ExtResource( 2 )]
+
+[node name="Casetta" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.30554, 0, 0 )
+
+[node name="Pavimento" parent="." instance=ExtResource( 4 )]
+
+[node name="KinematicBody" parent="." instance=ExtResource( 5 )]
+
+[node name="Camera" type="Camera" parent="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 0.982136, 0.188175, 0, -0.188175, 0.982136, -0.124968, 2.05176, 4.70776 )
+
