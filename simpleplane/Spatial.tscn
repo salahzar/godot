@@ -4,47 +4,16 @@
 
 [sub_resource type="CubeMesh" id=1]
 
-custom_aabb = AABB( 0, 0, 0, 0, 0, 0 )
-size = Vector3( 2, 2, 2 )
-subdivide_width = 0
-subdivide_height = 0
-subdivide_depth = 0
 
-[node name="Spatial" type="Spatial" index="0"]
+[node name="Spatial" type="Spatial"]
 
-[node name="Camera" type="Camera" parent="." index="0"]
-
+[node name="Camera" type="Camera" parent="."]
 transform = Transform( 0.627649, 0.37135, -0.684219, 0, 0.878898, 0.47701, 0.778496, -0.299395, 0.55164, -2.40746, 2.80197, 2.56176 )
-keep_aspect = 1
-cull_mask = 1048575
-environment = null
-h_offset = 0.0
-v_offset = 0.0
-doppler_tracking = 0
-projection = 0
-current = false
-fov = 70.0
-size = 1.0
-near = 0.05
-far = 100.0
 
-[node name="MeshInstance" type="MeshInstance" parent="." index="1"]
-
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
+[node name="MeshInstance" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
-skeleton = NodePath("..")
 material/0 = null
 script = ExtResource( 1 )
-_sections_unfolded = [ "Geometry", "LOD", "Pause", "Transform", "Visibility", "material" ]
-image = "res://image.jpg"
-p = 0
 
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
 

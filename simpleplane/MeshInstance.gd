@@ -1,8 +1,10 @@
 extends MeshInstance
 
-var angle = 0
+
+export (int) var angle = 0
+#var mesh = MeshInstance()
 export (String) var image = "res://image.jpg"
-export (int) var p = 0
+#export (int) var p = 0
 
 func _ready():
 	
@@ -10,7 +12,6 @@ func _ready():
 	#mat.flags_unshaded = true;
 	mat.albedo_texture = load(image);
 	
-	var size = 2;
 	var surfaceTool = SurfaceTool.new();
 	
 	var uv00 = Vector2(0,0)
@@ -60,3 +61,6 @@ func plane(surfaceTool,uvs, points):
 func _process(delta):
     angle += delta * 100
     self.rotation_degrees = Vector3(angle, angle, angle)
+    self.translation.x += rand_range(-0.01,0.01)
+    self.translation.y += rand_range(-0.01,0.01)
+    self.translation.z += rand_range(-0.01,0.01)
