@@ -1,3 +1,7 @@
+# il gatto e' CC0 preso da https://opengameart.org/content/low-poly-cat-thing
+# e lo script e' preso da https://pastebin.com/7bVvEJwp
+# ispirato anche da questo video: https://www.youtube.com/watch?v=1I3z5ZpBOmc&t=18s
+# Se volete importarlo in un altro progetto dovete 
 extends KinematicBody
 
 const MOVE_SPEED = 1.2

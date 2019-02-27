@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/polycat.dae-b35e516335840a9b7741d45214ff917e.scn"
+path="res://.import/polycat.dae-4cbbab40c150802bbd753ab690d6927d.scn"
 
 [deps]
 
-source_file="res://models/polycat/polycat.dae"
-dest_files=[ "res://.import/polycat.dae-b35e516335840a9b7741d45214ff917e.scn" ]
+source_file="res://prefab/gatto/polycat/polycat.dae"
+dest_files=[ "res://.import/polycat.dae-4cbbab40c150802bbd753ab690d6927d.scn" ]
 
 [params]
 

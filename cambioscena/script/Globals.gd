@@ -6,7 +6,7 @@ var _params
 
 func goto_scene(name, params):
 	_params = params
-	get_tree().change_scene("res://"+name+".tscn")
+	get_tree().change_scene("res://scene/"+name+".tscn")
 	
 func get_param(name):
 	if _params != null and _params.has(name):

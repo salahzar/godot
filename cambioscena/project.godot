@@ -16,12 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="cambioscena"
-run/main_scene="res://livello1.tscn"
+run/main_scene="res://scene/livello1.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Globals="*res://Globals.gd"
+Globals="*res://script/Globals.gd"
 
 [rendering]
 

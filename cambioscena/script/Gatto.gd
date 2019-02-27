@@ -1,4 +1,4 @@
-extends "res://Movimento.gd"
+extends "res://prefab/gatto/Movimento.gd"
 
 func handle():
 	for i in range(get_slide_count()):
