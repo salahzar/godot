@@ -1,3 +1,0 @@
-extends Spatial
-
-var GUI
