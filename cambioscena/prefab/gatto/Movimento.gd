@@ -103,5 +103,5 @@ func play_anim(name):
 	anim.play(name)
 
 func handle():
-	print("handle super")
+	#print("handle super")
 	pass
