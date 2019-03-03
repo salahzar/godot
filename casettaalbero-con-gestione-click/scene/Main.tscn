@@ -1,15 +1,13 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://GUI.gd" type="Script" id=1]
-[ext_resource path="res://Xolonium-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://albero.tscn" type="PackedScene" id=3]
-[ext_resource path="res://casetta.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Pavimento.tscn" type="PackedScene" id=5]
-[ext_resource path="res://KinematicBody.tscn" type="PackedScene" id=6]
+[ext_resource path="res://script/GUI.gd" type="Script" id=1]
+[ext_resource path="res://font/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://prefab/albero.tscn" type="PackedScene" id=3]
+[ext_resource path="res://prefab/Casetta.tscn" type="PackedScene" id=4]
+[ext_resource path="res://prefab/Pavimento.tscn" type="PackedScene" id=5]
+[ext_resource path="res://prefab/KinematicBody.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
-size = 24
-outline_color = Color( 0.0588235, 0.866667, 0.0313726, 1 )
 font_data = ExtResource( 2 )
 
 [node name="Spatial" type="Spatial"]
