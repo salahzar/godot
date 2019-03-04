@@ -44,6 +44,7 @@ func _input_event(viewport, event, shape_idx, vector, integer):
 	if left_button(event):
 	    #assuming you want the object to move upwards:
 	    #self.set_linear_velocity(Vector2(0, -300))
-		print("HELLO PLAYER")
-		Global.GUI.display("Cliccato Player")
+		print("Lancio video")
+		OS.shell_open("https://www.youtube.com/watch?v=6jVMvEBDFGM&autoplay=1")
+		Global.GUI.display("Lanciato video")
 	
