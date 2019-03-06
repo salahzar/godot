@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/H7QZU.jpg-ea012bf6d90aa27892ec1c4fb5dd8999.stex"
+path="res://.import/1280px-Magpupungko_between_beach-slum_area_spherical_360-degree_08-23-2017.jpg-3a68f727426b9c442d62084add11071a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/H7QZU.jpg"
-dest_files=[ "res://.import/H7QZU.jpg-ea012bf6d90aa27892ec1c4fb5dd8999.stex" ]
+source_file="res://sky/1280px-Magpupungko_between_beach-slum_area_spherical_360-degree_08-23-2017.jpg"
+dest_files=[ "res://.import/1280px-Magpupungko_between_beach-slum_area_spherical_360-degree_08-23-2017.jpg-3a68f727426b9c442d62084add11071a.stex" ]
 
 [params]
 
