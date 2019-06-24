@@ -146,5 +146,4 @@ transform = Transform( 0.161787, 0, 0, 0, -0.15532, -0.0452851, 0, 0.0452851, -0
 
 [node name="Moneta4" parent="." instance=ExtResource( 7 )]
 transform = Transform( 0.161787, 0, 0, 0, -0.15532, -0.0452851, 0, 0.0452851, -0.15532, -1.09188, 3.0777, 2.73769 )
-
 [connection signal="timeout" from="GUI/Timer" to="GUI" method="_on_Timer_timeout"]
