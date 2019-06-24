@@ -8,6 +8,7 @@
 [ext_resource path="res://prefab/KinematicBody.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
+
 font_data = ExtResource( 2 )
 
 [node name="Spatial" type="Spatial"]
