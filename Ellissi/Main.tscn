@@ -8,17 +8,34 @@
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 1 )
+emission_enabled = true
+emission = Color( 0.933333, 0.905882, 0.231373, 1 )
+emission_energy = 0.05
+emission_operator = 0
+emission_on_uv2 = false
 
 [sub_resource type="SphereMesh" id=2]
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_texture = ExtResource( 3 )
+metallic_specular = 1.0
+emission_enabled = true
+emission = Color( 0.34902, 0.498039, 0.945098, 1 )
+emission_energy = 0.05
+emission_operator = 0
+emission_on_uv2 = false
 
 [sub_resource type="SphereMesh" id=4]
 material = SubResource( 3 )
 
 [sub_resource type="SpatialMaterial" id=5]
 albedo_texture = ExtResource( 4 )
+metallic_specular = 1.0
+emission_enabled = true
+emission = Color( 0.968627, 0.952941, 0.952941, 1 )
+emission_energy = 0.1
+emission_operator = 0
+emission_on_uv2 = false
 
 [sub_resource type="SphereMesh" id=6]
 
@@ -29,7 +46,7 @@ albedo_texture = ExtResource( 5 )
 
 [sub_resource type="Curve3D" id=9]
 _data = {
-"points": PoolVector3Array( 1.08345, 3.8147e-06, 11.1334, -1.08345, -3.8147e-06, -11.1334, -14.72, 0, -0.467003, 0, 0, 0, 0, 0, 0, 3.47451, 0, -13.3189, 0.672489, -1.90735e-06, -14.9068, -0.672489, 1.90735e-06, 14.9068, 25.5918, 1.90735e-06, 0.280203, 4.3338, -2.28882e-05, 0.0373707, -4.3338, 2.28882e-05, -0.0373707, 0.0747216, 1.90735e-06, 12.9827, -0.0747271, -1.71661e-05, 13.8607, 0.0747271, 1.71661e-05, -13.8607, -14.72, 0, -0.467003 ),
+"points": PoolVector3Array( 1.08345, 3.8147e-006, 11.1334, -1.08345, -3.8147e-006, -11.1334, -14.72, 0, -0.467003, 0, 0, 0, 0, 0, 0, 3.47451, 0, -13.3189, 0.672489, -1.90735e-006, -14.9068, -0.672489, 1.90735e-006, 14.9068, 25.5918, 1.90735e-006, 0.280203, 4.3338, -2.28882e-005, 0.0373707, -4.3338, 2.28882e-005, -0.0373707, 0.0747216, 1.90735e-006, 12.9827, -0.0747271, -1.71661e-005, 13.8607, 0.0747271, 1.71661e-005, -13.8607, -14.72, 0, -0.467003 ),
 "tilts": PoolRealArray( 0, 0, 0, 0, 0 )
 }
 
@@ -92,12 +109,15 @@ speedOrbit = 0.008
 curve = SubResource( 9 )
 
 [node name="PathFollow" type="PathFollow" parent="Path"]
-transform = Transform( 0.818087, -2.58049e-06, 0.575095, 4.2986e-06, 1, -1.62779e-06, -0.575095, 3.80377e-06, 0.818087, -10.8441, -2.45056e-07, 10.2011 )
+transform = Transform( 0.818087, -2.58049e-006, 0.575095, 4.2986e-006, 1, -1.62779e-006, -0.575095, 3.80377e-006, 0.818087, -10.8441, -2.44971e-007, 10.2011 )
 offset = 97.5808
 
 [node name="Camera" type="Camera" parent="Path/PathFollow"]
-transform = Transform( 0.173703, 0.134179, -0.975614, 0.166556, 0.9724, 0.163391, 0.970611, -0.190875, 0.146561, -0.545589, 5.35586, 0.275477 )
+transform = Transform( 0.173703, 0.134179, -0.975614, 0.166556, 0.9724, 0.163391, 0.970611, -0.190876, 0.14656, -0.545589, 5.35586, 0.275477 )
+fov = 51.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Path"]
 autoplay = "camera fly"
 "anims/camera fly" = SubResource( 10 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
